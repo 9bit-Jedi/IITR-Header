@@ -322,7 +322,7 @@ a{
 @media(max-width:1040px){
 
     /* basic code */
-    .ham-wrapper{background: #3bb96e;}
+    /* .ham-wrapper{background: #3bb96e;} */
     .header-bottom{background: #dbdbdb;}
     .mid-hr{display: none;}
 
@@ -368,7 +368,7 @@ a{
         /* height: 100%; */
     }
     .element, .element8, .body-sub{
-        background: #47b2ff;
+        background: #dbdbdb;
         width: 100%;
     }
 
