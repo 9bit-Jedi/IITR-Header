@@ -186,11 +186,6 @@ a{
         /* min-width: 160px; */
         position: absolute;
     }
-
-    .header-bottom .body {
-        display: none;
-    } 
-
 }
 
 /* hover behaviour */
@@ -277,7 +272,7 @@ a{
     padding-bottom: 14px;
     padding-top: 6px;
     max-width: fit-content  ;
-    min-width: 200px;
+    min-width: 150px;
 }
 
 .element-sub{
@@ -307,6 +302,11 @@ a{
         width: 96%;
     }
 }
+@media(max-width:1020px){
+    .head, .head-sub , .head-sub-sub{
+        font-size: 14px;
+    }
+}
 /* @media(max-width:500px){
     .g20 img{
         height: ;
@@ -323,7 +323,7 @@ a{
 
     /* basic code */
     /* .ham-wrapper{background: #3bb96e;} */
-    .header-bottom{background: #dbdbdb;}
+    .header-bottom{background: #e9e9e9;}
     .mid-hr{display: none;}
 
     .header-wrapper{
@@ -354,7 +354,7 @@ a{
         display: flex;
         flex-direction:column ;
         align-items: flex-start;
-        width: 120px;
+        width: 180px;
         top:40px;
     }
 
@@ -362,20 +362,23 @@ a{
         display: flex;
         flex-direction:column ;
         align-items: flex-start;
-        width: 120px;
+        width: 180px;
         /* padding:100px 0px; */
         top:40px;
         /* height: 100%; */
     }
     .element, .element8, .body-sub{
-        background: #dbdbdb;
+        background: #e9e9e9;
         width: 100%;
+    }
+    .body-sub{       
+        background: #dbdbdb;
     }
 
     .header-bottom .head {
         display: flex;
         flex-direction: row;
-        padding: 5px;
+        padding: 10px;
     }
         .head-arrow{display: none;}
 
@@ -393,7 +396,7 @@ a{
 
     .header-bottom .head:hover{
         font-weight: 600;
-        padding: 5px 3px;
+        padding: 10px;
     }
     .header-bottom .head:hover + .body {
         display: block;
@@ -416,6 +419,38 @@ a{
 
 }
 
-
 /* text-options-mb */
 
+@media(min-width:1020px){
+    .idk-wrapper-mb{
+        display: none;
+    }
+}
+
+.idk-wrapper-mb{
+    margin: 50px 10px;
+}
+ 
+@media(max-width:1020px){
+    .idk-wrapper-mb{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .idk-wrapper-mb .top{
+        flex-direction: column;
+        row-gap: 14px;
+    }
+    .idk-wrapper-mb .bottom{
+        flex-direction: column;
+        row-gap: 14px;
+        align-items: flex-start;
+    }
+    .idk-wrapper-mb .dark-mode{
+        order:-1;
+        margin-top: 10px;
+    }
+    .idk-wrapper .dark-mode .light{
+        margin: 0px;
+    }
+}
